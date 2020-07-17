@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Coustard:wght@400;900&family=Neuton:wght@400;700&family=Roboto+Slab:wght@500;600;700;800&display=swap');
+
+* {
+	outline: none;
+}
+body {
+	margin: 0;
+}
+
+.container {
+	display: block;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+	.head {
+		display: flex;
+		font-family: 'Coustard', serif;
+		background-color: #2b76a2;
+		color: #ffffff;
+	}
+		#name {
+			width: 85%;
+			margin: 0 auto;
+			padding: 1%;
+			font-size: 3.2rem;
+			text-align: center;
+		}
+	.content {
+		background-color: #ffffff;
+		font-family: 'Roboto Slab', serif;
+		display: flex;
+	}
+		.covSection {
+			width: 40%;
+			height: 22.5rem;
+			background: url("../img/disinfection.jpeg");
+			background-repeat: no-repeat;
+			background-size: 110%;
+			display: flex;
+		}
+		.quSection {
+			width: 60%;
+			display: flex;
+		}
+			#quCont {
+				margin: auto;
+			}
+				#cov {
+					width: 100%;
+					margin: auto;
+					color: #f02323;
+					font-size: 2.5rem;
+					text-align: center;
+					padding: 2% 0;
+				}
+				#arvo{
+					width: 70%;
+					font-family: 'Arvo', serif;
+					font-size: 1.25rem;
+					padding: 2% 0;
+					line-height: 190%;
+					margin: auto;
+				}
+					#quButton{
+						font-size: 1.2rem;
+						border-radius: 0.3rem;
+						border: 1px solid #4295db;
+						background-color: #4295db;
+						color: #ffffff;
+						padding: 1% 2%;
+						margin: 0 3%;
+					}
+	.foot{
+		background-color: #2b76a2;
+		color: #ffffff;
+		font-family: 'Roboto Slab', serif;
+		display: flex;
+		font-size: 1rem;
+	}
+		#rights {
+			width: 80%;
+			margin: 0 auto;
+			padding: 2% 0;
+		}
