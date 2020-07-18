@@ -23,6 +23,10 @@ class Controller extends CI_Controller {
 
 	}
 
+	public function test(){
+		$this->load->view('Intranet/test');
+	}
+
 	public function location(){
 
 		$q_establishment = $this->Queries->query_est();

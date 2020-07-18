@@ -5,6 +5,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-size: 1rem;
 	background: #e6e6e6;
@@ -24,11 +28,53 @@ h4 {
 	font-size: 1.7rem;
 }
 
+h2,h3,h4,h5{
+	border-bottom: solid 2px #4065AD;
+	border-right: solid 2px #4065AD;
+}
+
+.nav {
+	background-color: #4065AD;
+	padding: 1em 2em;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+.nav a {
+	color: #e6e6e6 !important;
+}
+
+.navbar-toggler {
+	color: #e6e6e6 !important;
+	border-color: #e6e6e6!important;
+}
+
+.nav-item{
+	transition: all 0.2s ease-in;
+	border: solid 1px transparent;
+	margin-left: 2em;
+}
+
+.nav-item:hover{
+	border-bottom: solid 1px #e6e6e6;
+}
+.nav-item.active{
+	border-bottom: solid 1px #e6e6e6;
+	border-right: solid 2px #e6e6e6;
+}
+
 
 #banner {
 	background-image: url("../img/disinfecting.jpeg");
 	background-size: cover;
 	height: 100vh;
+}
+
+.btn-primary {
+	background-color: #4065AD;
+	border-color: #4065AD;
+	color: #e6e6e6;
 }
 
 .banner-text {
@@ -47,3 +93,78 @@ h4 {
 		font-weight: bold;
 	}
 
+#tools .tool-text, 
+#tools .tool-img,
+#contact .contact-address {
+	display: flex;
+	align-items: center;
+	margin: 5em 0;
+}
+
+#clients {
+	padding-bottom: 2em;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+}
+
+.slider-client div img {
+	filter: grayscale(1);
+	transition: all 0.2s ease-in;
+}
+
+.slider-client div img:hover {
+	filter: grayscale(0);
+}
+
+#contact {
+	color: #e6e6e6;
+	padding: 2em 0;
+	background-image: url("../img/contact.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#contact .contact-address div ul {
+	padding: 0;
+	list-style: none;
+}
+
+#contact .contact-address div ul li {
+	margin: 1em 0;
+}
+
+#contact .contact-form {
+	padding-bottom: 2em;
+}
+
+#contact .contact-map {
+	padding: 0;
+}
+
+
+#footer {
+	background: #4065AD;
+	padding: 2em;
+	color: #e6e6e6;
+}
+
+#footer div div:nth-child(1) ul {
+	padding: 0;
+	list-style: none;
+	display: inline-flex;
+}
+#footer div div:nth-child(1) ul li {
+	margin: 0 0.5em;
+	font-size: 2rem;
+}
+#footer div div:nth-child(1) ul li a{
+	text-decoration: none;
+	color: #e6e6e6;
+	opacity: 0.5;
+	transition: all 0.2s ease-in;
+}
+
+#footer div div:nth-child(1) ul li a:hover{
+	opacity: 1;
+}

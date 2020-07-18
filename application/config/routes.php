@@ -58,3 +58,4 @@ $route['users'] = 'Controller/users';
 $route['checkIn'] = 'Controller/checkIn';
 $route['checkOut'] = 'Controller/checkOut';
 $route['work'] = 'Controller/work';
+$route['test'] = 'Controller/test';
