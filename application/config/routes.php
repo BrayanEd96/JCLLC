@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['location'] = 'Controller/location';
+$route['supervisor'] = 'Controller/supervisor';
 $route['users'] = 'Controller/users';
 $route['checkIn'] = 'Controller/checkIn';
 $route['checkOut'] = 'Controller/checkOut';

@@ -17,19 +17,19 @@
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span><i class="fa fa-bars"></i></span>
 	  </button>
-	  <div class="collapse navbar-collapse">
+	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav">
 	      <li class="nav-item active" >
 	        <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item" >
-	        <a class="nav-link" href="#tools">Services</a>
+	      <li class="nav-item" onclick="goTo('tools')" >
+	        <a class="nav-link" >Services</a>
 	      </li>
-	      <li class="nav-item" >
-	        <a class="nav-link" href="#clients">Clients</a>
+	      <li class="nav-item" onclick="goTo('clients')">
+	        <a class="nav-link" >Clients</a>
 	      </li>
-	      <li class="nav-item" >
-	        <a class="nav-link" href="#contact">Contact us</a>
+	      <li class="nav-item" onclick="goTo('contact')">
+	        <a class="nav-link" >Contact us</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -51,15 +51,37 @@
 			</div>
 		</div>
 	</div>
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		Launch demo modal
+	</button>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div> -->
 	<div id="tools">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 flex tool-img">
+			<!-- <div class="row">
+				<div class="col-md-6 flex tool-img">
 					<div>
-						<img src="<?= base_url('assets/img/bomb.png') ?>" width="90%"/>
+						<img src="<?= base_url('assets/img/bomb.png') ?>" width="80%"/>
 					</div>
 				</div>
-				<div class="col-md-4 tool-text">
+				<div class="col-md-6 tool-text">
 					<div id="text">
 						<h2>
 							Tools
@@ -70,6 +92,41 @@
 					</div>
 					
 				</div>
+			</div> -->
+			<div class="row">
+				<div class="col-md-6 flex tool-img">
+					<div>
+						<img src="<?= base_url('assets/img/victory.png') ?>" width="80%"/>
+					</div>
+				</div>
+				<div class="col-md-6 tool-text">
+					<div id="text">
+						<h4>
+							Victory Innovations - Professional Wireless Electrostatic Backpack
+						</h4>
+						<ul>
+							<li>
+								The patented electrostatic charge penetrates chemical providing a thin, even spray pattern on all surfaces.
+							</li>
+							<li>
+								Wireless comfort that allows effortless movement of the room.
+							</li>
+							<li>
+								The removable HDPE tank is easy to refill and holds 2.25 gallons, allowing you to cover up to 23,000 square ft.
+							</li>
+							<li>
+								3-in-1 nozzle allows you to set particle size to match your application.
+							</li>
+							<li>
+								4ft hose with quick release valve allows for comfortable reach and maximum maneuverability
+							</li>
+						</ul>
+						<div id="price">
+							Price: US $4500 + Shipment
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -88,8 +145,8 @@
 					<div>
 						<h2>Contact</h2>
 						<ul>
-							<li><i class="fas fa-map-marker-alt"></i> 13691 Harbor Blvd, Garden Grove, CA 92843</li>
-							<li><i class="fas fa-phone"></i> 305 627 3474</li>
+							<li><i class="fas fa-map-marker-alt"></i> 4614 Bluestone Dr, Bakersfield, CA 93311</li>
+							<li><i class="fas fa-phone"></i> (661) 706-9878</li>
 							<li><i class="fas fa-envelope-open"></i> info@janitorialcoronallc.com</li>
 							<li><i class="fas fa-clock"></i> Monday to Friday - 07:00am to 14:00pm</li>
 						</ul>
@@ -114,7 +171,7 @@
 			</div>
 		</div>
 		<div class="col-md-12 contact-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204504.2856756582!2d-119.93464568966095!3d36.78545132179245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de1549e4e9d%3A0x7b12406449a3b811!2sFresno%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1595023329162!5m2!1sen!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.7188541985847!2d-119.12496498468694!3d35.312966680281875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea412495cdbbcd%3A0xe8fef55e521afd66!2s4614%20Bluestone%20Dr%2C%20Bakersfield%2C%20CA%2093311%2C%20EE.%20UU.!5e0!3m2!1ses!2smx!4v1595264766824!5m2!1ses!2smx" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
 	<div id="footer">
@@ -128,7 +185,7 @@
 				</ul>
 			</div>
 			<div class="col-12 text-center">
-				<small>© 2020 - JANITORIAL CORONAS LLC</small>
+				<small> 2020 - JANITORIAL CORONAS LLC</small>
 			</div>
 		</div>
 	</div>
@@ -155,11 +212,6 @@ sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossor
 		autoplay:true
 	});
 
-	// $('.nav-item').on('click', function(){
-	// 	$('.nav-item').removeClass('active');
-	// 	$(this).addClass('active');
-	// });
-
 	var navItems = document.querySelectorAll('.nav-item');
 
 	navItems.forEach((navItem) => {
@@ -168,6 +220,15 @@ sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossor
 			navItem.classList.add('active');
 		});
 	});
+
+	function goTo(x){
+        let item = document.getElementById(`${x}`).offsetTop;
+        window.scroll({
+            top: item - 100,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
 
 </script>
 </html>

@@ -101,6 +101,15 @@ h2,h3,h4,h5{
 	margin: 5em 0;
 }
 
+.row {
+	margin: 5em 0;
+}
+
+#price{
+	text-decoration: underline;
+	text-align: end;
+}
+
 #clients {
 	padding-bottom: 2em;
 	height: 50vh;
