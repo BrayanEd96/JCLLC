@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Coustard:wght@400;900&family=Neuton:wght@400;700&family=Roboto+Slab:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
 	margin: 0;
@@ -28,16 +28,11 @@ h4 {
 	font-size: 1.7rem;
 }
 
-h2,h3,h4,h5{
-	border-bottom: solid 2px #4065AD;
-	border-right: solid 2px #4065AD;
-}
-
 .nav {
 	background-color: #4065AD;
 	padding: 1em 2em;
 	position: fixed;
-	z-index: 1;
+	z-index: 3;
 	width: 100%;
 }
 
@@ -80,7 +75,6 @@ h2,h3,h4,h5{
 .banner-text {
 	height: 100vh;
 	display: flex;
-	align-items: center;
 	padding: 2.5em;
 	background-color: rgba(255, 255, 255, 0.5);
 	font-size: 1.3rem;
@@ -89,25 +83,51 @@ h2,h3,h4,h5{
 	clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
-	#cov {
+	.bold {
 		font-weight: bold;
 	}
 
 #tools .tool-text, 
 #tools .tool-img,
-#contact .contact-address {
+#contact .contact-address,
+.modal-text-middle{
 	display: flex;
 	align-items: center;
-	margin: 5em 0;
 }
 
-.row {
-	margin: 5em 0;
+.modal-text-middle{
+	height: 100%;
 }
 
-#price{
-	text-decoration: underline;
-	text-align: end;
+
+#sectioner {
+	background-image: url("../img/job.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #e6e6e6;
+	padding: 2em 4em;
+	/*position: relative;*/
+}
+
+/*#sectioner > #form-section {
+	height: 20em;
+}*/
+
+.dropdown-menu {
+	background-color: #4065AD !important;
+}
+
+.dropdown-item:hover{
+	background-color: #557ecd;
+}
+
+
+.forms {
+	background: #ffffff;
+	border-radius: 1.5em;
+	width: 100%;
+	padding: 2em;
+	color: #010101;
 }
 
 #clients {
@@ -176,4 +196,15 @@ h2,h3,h4,h5{
 
 #footer div div:nth-child(1) ul li a:hover{
 	opacity: 1;
+}
+
+.i-close-modal {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	border-radius: 50%;
+	right: -10px;
+	top: -10px;
 }

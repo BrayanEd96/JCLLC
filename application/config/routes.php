@@ -53,10 +53,28 @@ $route['default_controller'] = 'Controller';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['index'] = 'Controller/index';
+$route['work'] = 'Controller/work';
+$route['log'] = 'Controller/log';
+$route['alta'] = 'Controller/alta';
+$route['supervision'] = 'Controller/supervision';
+$route['vendors'] = 'Controller/vendors';
+
 $route['location'] = 'Controller/location';
 $route['supervisor'] = 'Controller/supervisor';
 $route['users'] = 'Controller/users';
 $route['checkIn'] = 'Controller/checkIn';
 $route['checkOut'] = 'Controller/checkOut';
-$route['work'] = 'Controller/work';
-$route['test'] = 'Controller/test';
+$route['logIn'] = 'Controller/logIn';
+$route['signUp'] = 'Controller/signUp';
+$route['checks'] = 'Controller/checks';
+$route['change'] = 'Controller/change';
+$route['sendMail'] = 'Controller/sendMail';
+$route['states'] = 'Controller/states';
+$route['cities'] = 'Controller/cities';
+$route['registerVendor'] = 'Controller/registerVendor';
+$route['vendorsQuery'] = 'Controller/vendorsQuery';
+$route['valVendor'] = 'Controller/valVendor';
+$route['changePassword'] = 'Controller/changePassword';
+$route['updateVendor'] = 'Controller/updateVendor';
+

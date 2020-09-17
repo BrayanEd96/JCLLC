@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,16 +8,41 @@
 body {
 	background-color: #fafafa;
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1{
 	margin: 1% auto;
-	font-size: 45px;
+	font-size: 2.5em;
 }
 
 #title {
-	margin: 4% 0;
+	margin: 5% 0 3% 0;
+}
+
+.nav {
+	background-color: #4065AD;
+	padding: 1em 2em;
+	z-index: 1;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.nav a {
+	color: #e6e6e6 !important;
+}
+
+.navbar-toggler {
+	color: #e6e6e6 !important;
+	border-color: #e6e6e6!important;
+}
+
+.dropdown-menu {
+	background-color: #4065AD !important;
+}
+
+.dropdown-item:hover{
+	background-color: #557ecd;
 }
 
 #main {
@@ -34,9 +61,6 @@ h1{
 			margin: auto;
 		}
 
-	#buttonsContainer {
-		display: flex;
-	}
 		#bCheckIn {
 			margin: 3%;
 		}
@@ -64,13 +88,24 @@ h1{
 	font-size: 20px;
 }
 
+#footer {
+	padding: 2em;
+	color: #565656;
+}
+
+.foot {
+	bottom: 0px;
+	width: 100%;
+	z-index: -1;
+}
+
 	@media (max-width: 576px) {
 		#main {
 			width: 100%;
 		}
 
 		#stopWatch {
-			font-size: 3.5em;
+			font-size: 3em;
 			margin: 5% auto;
 			display: flex;
 
@@ -83,9 +118,6 @@ h1{
 	}
 
 	@media (max-width: 423px) {
-		#main {
-			width: 100%;
-		}
 
 		#stopWatch {
 			font-size: 2em;
@@ -99,9 +131,6 @@ h1{
 	}
 
 	@media (min-width: 576px) {
-		#main {
-			width: 70%;
-		}
 
 		#stopWatch {
 			font-size: 4.5em;
@@ -115,8 +144,31 @@ h1{
 		}
 	}
 
-	@media (min-width: 770px) {
+	@media (min-width: 768px) {
+		#main {
+			width: 70%;
+		}
+	}
+
+	@media (min-width: 992px) {
+		#main {
+			width: 60%;
+		}
+	}
+
+	@media (min-width: 1200px) {
 		#main {
 			width: 50%;
 		}
 	}
+
+/*#table-section {
+	overflow: auto;
+	height: 28em;
+}
+
+#thead {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}*/
